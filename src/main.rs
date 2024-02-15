@@ -1,11 +1,12 @@
 fn main() {
-    let v: Vec<i32> = Vec::new();
-    let v = vec![1, 2, 3];
+    for i in 0..1000000 {
+        println!("fib({i}): {}",fibonacci(i))
+    }
+}
 
-    let mut v = Vec::new();
-    v.push(5);
-    v.push(6);
-    v.push(7);
-    v.push(8);
-    println!("{:?}", v)
+fn fibonacci(n:u128) -> u128 {
+    if n <= 1 {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n -2);
 }
