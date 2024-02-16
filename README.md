@@ -1,1 +1,1 @@
-###rust_program
+rust_program
