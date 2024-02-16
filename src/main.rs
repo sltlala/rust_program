@@ -18,6 +18,7 @@ fn main() -> Result<(), Error> {
         let time = collect_times(number);
         times_list.push(time);
     }
+    
     // 将结果的集合存入txt文件
     let file_path = "fibonacci_result.txt";
     let mut file = File::create(file_path)?;
