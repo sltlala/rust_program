@@ -2,7 +2,7 @@ use std::io;
 use std::io::Write;
 use std::io::Error;
 use std::fs::File;
-use std::time::{Instant};
+use std::time::Instant;
 fn main() -> Result<(), Error> {
     println!("Please input your number.");
     // 获取输入的数字
